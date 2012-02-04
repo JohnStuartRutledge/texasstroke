@@ -5,9 +5,41 @@ body {
     font-weight: 300;
 }
 
+.stroke_main {
+    min-height: 586px !important;
+}
+
+#stroke_wrapper {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#stroke_map {
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    /*border: 1px solid #496fab;*/
+}
+
+text.list {
+font-size: 20px;
+}
+text.active {
+    fill: #dd2f00;
+}
+path.overlay {
+    stroke: none;
+    fill: red;
+}
+path.overlay:hover {
+    stroke: #dd2f00;
+    stroke-width: 2;
+}
+
+
 svg {
     background: #eee;
-    width: 960px;
+    width: 900px;
     height: 500px;
 }
 

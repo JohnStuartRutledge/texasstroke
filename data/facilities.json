@@ -1,0 +1,790 @@
+[{
+    "facility_name": "Baptist Medical Center",
+    "city": "San Antonio",
+    "zip": 78205,
+    "TSA": "P",
+    "certification_expire_date": "3/1/2014",
+    "designation_level": 1,
+    "longitude": 29.4237,
+    "latitude": -98.4925
+},
+{
+    "facility_name": "Baylor Regional Medical Center at Grapevine",
+    "city": "Grapevine",
+    "zip": 76051,
+    "TSA": "E",
+    "certification_expire_date": "3/1/2013",
+    "designation_level": 1,
+    "longitude": 32.9328,
+    "latitude": -97.0808
+},
+{
+    "facility_name": "Baylor University Medical Center",
+    "city": "Dallas",
+    "zip": 75246,
+    "TSA": "E",
+    "certification_expire_date": "11/1/2011",
+    "designation_level": 1,
+    "longitude": 32.7948,
+    "latitude": -96.7697
+},
+{
+    "facility_name": "Bayshore Medical Center",
+    "city": "Pasadena",
+    "zip": 77504,
+    "TSA": "Q",
+    "certification_expire_date": "6/1/2013",
+    "designation_level": 1,
+    "longitude": 29.6501,
+    "latitude": -95.1885
+},
+{
+    "facility_name": "CHRISTUS Spohn Hospital Corpus Christi- Shoreline",
+    "city": "Corpus Christi",
+    "zip": 78404,
+    "TSA": "U",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 27.7683,
+    "latitude": -97.4013
+},
+{
+    "facility_name": "CHRISTUS St.Michael Health System",
+    "city": "Texarkana",
+    "zip": 75503,
+    "TSA": "F",
+    "certification_expire_date": "8/1/2012",
+    "designation_level": 1,
+    "longitude": 33.4669,
+    "latitude": -94.0774
+},
+{
+    "facility_name": "Citizens Medical Center",
+    "city": "Victoria",
+    "zip": 77901,
+    "TSA": "S",
+    "certification_expire_date": "5/1/2013",
+    "designation_level": 1,
+    "longitude": 28.809,
+    "latitude": -96.9993
+},
+{
+    "facility_name": "Covenant Medical Center",
+    "city": "Lubbock",
+    "zip": 79410,
+    "TSA": "B",
+    "certification_expire_date": "2/2/2012",
+    "designation_level": 1,
+    "longitude": 33.5693,
+    "latitude": -101.8904
+},
+{
+    "facility_name": "Cypress Fairbanks Medical Center Hospital",
+    "city": "Houston",
+    "zip": 77064,
+    "TSA": "Q",
+    "certification_expire_date": "11/1/2011",
+    "designation_level": 1,
+    "longitude": 29.919,
+    "latitude": -95.5569
+},
+{
+    "facility_name": "DeTar Hospital Navarro",
+    "city": "Victoria",
+    "zip": 77902,
+    "TSA": "S",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 28.9255,
+    "latitude": -97.1006
+},
+{
+    "facility_name": "Del Sol Medical Center - A campus of Las Palmas Del Sol Healthcare",
+    "city": "El Paso",
+    "zip": 79925,
+    "TSA": "I",
+    "certification_expire_date": "10/1/2012",
+    "designation_level": 1,
+    "longitude": 31.7814,
+    "latitude": -106.3613
+},
+{
+    "facility_name": "Doctors Hospital at White Rock Lake",
+    "city": "Dallas",
+    "zip": 75218,
+    "TSA": "E",
+    "certification_expire_date": "10/1/2012",
+    "designation_level": 1,
+    "longitude": 32.8463,
+    "latitude": -96.6972
+},
+{
+    "facility_name": "East Texas Medical Center - Tyler",
+    "city": "Tyler",
+    "zip": 75701,
+    "TSA": "G",
+    "certification_expire_date": "11/1/2013",
+    "designation_level": 1,
+    "longitude": 32.3254,
+    "latitude": -95.2922
+},
+{
+    "facility_name": "Eddy Scurlock Stroke Center - The Methodist Hospital at Medical Center",
+    "city": "Houston",
+    "zip": 77030,
+    "TSA": "Q",
+    "certification_expire_date": "6/1/2012",
+    "designation_level": 1,
+    "longitude": 29.7041,
+    "latitude": -95.401
+},
+{
+    "facility_name": "Good Shepherd Medical Center- Longview",
+    "city": "Longview",
+    "zip": 75601,
+    "TSA": "G",
+    "certification_expire_date": "5/1/2012",
+    "designation_level": 1,
+    "longitude": 32.5178,
+    "latitude": -94.7303
+},
+{
+    "facility_name": "Hillcrest Baptist Medical Center - Scott and White Healthcare",
+    "city": "Waco",
+    "zip": 76712,
+    "TSA": "M",
+    "certification_expire_date": "4/1/2012",
+    "designation_level": 1,
+    "longitude": 31.5051,
+    "latitude": -97.2311
+},
+{
+    "facility_name": "JPS Health Network",
+    "city": "Ft.Worth",
+    "zip": 76104,
+    "TSA": "E",
+    "certification_expire_date": "4/1/2012",
+    "designation_level": 1,
+    "longitude": 32.7256,
+    "latitude": -97.3184
+},
+{
+    "facility_name": "Kingwood Medical Center",
+    "city": "Kingwood",
+    "zip": 77339,
+    "TSA": "Q",
+    "certification_expire_date": "4/1/2012",
+    "designation_level": 1,
+    "longitude": 30.0563,
+    "latitude": -95.2107
+},
+{
+    "facility_name": "Las Palmas Medical Center",
+    "city": "El Paso",
+    "zip": 79902,
+    "TSA": "I",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 31.7763,
+    "latitude": " -106.4932 "
+},
+{
+    "facility_name": "Longview Regional Medical Center",
+    "city": "Longview",
+    "zip": 75605,
+    "TSA": "G",
+    "certification_expire_date": "7/1/2012",
+    "designation_level": 1,
+    "longitude": 32.5547,
+    "latitude": -94.7767
+},
+{
+    "facility_name": "Medical Center Hospital - Ector County Hospital District",
+    "city": "Odessa",
+    "zip": 79761,
+    "TSA": "J",
+    "certification_expire_date": "2/1/2013",
+    "designation_level": 1,
+    "longitude": 31.8579,
+    "latitude": -102.3523
+},
+{
+    "facility_name": "Medical Center of Arlington",
+    "city": "Arlington",
+    "zip": 76015,
+    "TSA": "E",
+    "certification_expire_date": "3/1/2013",
+    "designation_level": 1,
+    "longitude": 32.6931,
+    "latitude": -97.1347
+},
+{
+    "facility_name": "Medical Center of McKinney",
+    "city": "McKinney",
+    "zip": 75069,
+    "TSA": "E",
+    "certification_expire_date": "4/1/2012",
+    "designation_level": 1,
+    "longitude": 33.1966,
+    "latitude": -96.6085
+},
+{
+    "facility_name": "Medical Center of Plano",
+    "city": "Plano",
+    "zip": 75075,
+    "TSA": "E",
+    "certification_expire_date": "11/1/2011",
+    "designation_level": 1,
+    "longitude": 33.025,
+    "latitude": -96.7397
+},
+{
+    "facility_name": "Medical City Dallas Hospital",
+    "city": "Dallas",
+    "zip": 75230,
+    "TSA": "E",
+    "certification_expire_date": "11/1/2011",
+    "designation_level": 1,
+    "longitude": 32.8999,
+    "latitude": -96.7897
+},
+{
+    "facility_name": "Memorial Hermann Hospital",
+    "city": "Houston",
+    "zip": 77030,
+    "TSA": "Q",
+    "certification_expire_date": "11/1/2011",
+    "designation_level": 1,
+    "longitude": 29.7041,
+    "latitude": -95.401
+},
+{
+    "facility_name": "Memorial Hermann Katy Hospital",
+    "city": "Katy",
+    "zip": 77494,
+    "TSA": "Q",
+    "certification_expire_date": "4/1/2012",
+    "designation_level": 1,
+    "longitude": 29.7404,
+    "latitude": -95.8304
+},
+{
+    "facility_name": "Memorial Hermann Memorial City Medical Center",
+    "city": "Houston",
+    "zip": 77024,
+    "TSA": "Q",
+    "certification_expire_date": "12/1/2011",
+    "designation_level": 1,
+    "longitude": 29.7696,
+    "latitude": -95.5201
+},
+{
+    "facility_name": "Memorial Hermann Southwest Hospital",
+    "city": "Houston",
+    "zip": 77074,
+    "TSA": "Q",
+    "certification_expire_date": "4/1/2012",
+    "designation_level": 1,
+    "longitude": 29.6896,
+    "latitude": -95.5106
+},
+{
+    "facility_name": "Memorial Hermann The Woodlands Hospital",
+    "city": "The Woodlands",
+    "zip": 77380,
+    "TSA": "Q",
+    "certification_expire_date": "11/1/2011",
+    "designation_level": 1,
+    "longitude": 30.1441,
+    "latitude": -95.4703
+},
+{
+    "facility_name": "Methodist Charlton Medical Center",
+    "city": "Dallas",
+    "zip": 75237,
+    "TSA": "E",
+    "certification_expire_date": "3/1/2013",
+    "designation_level": 1,
+    "longitude": 32.659,
+    "latitude": -96.8765
+},
+{
+    "facility_name": "Methodist Dallas Medical Center",
+    "city": "Dallas",
+    "zip": 75265,
+    "TSA": "E",
+    "certification_expire_date": "8/1/2012",
+    "designation_level": 1,
+    "longitude": 32.7673,
+    "latitude": -96.7776
+},
+{
+    "facility_name": "Methodist Hospital",
+    "city": "San Antonio",
+    "zip": 78229,
+    "TSA": "P",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 29.5042,
+    "latitude": -98.5697
+},
+{
+    "facility_name": "Methodist Richardson Medical Center",
+    "city": "Richardson",
+    "zip": 75080,
+    "TSA": "E",
+    "certification_expire_date": "6/1/2013",
+    "designation_level": 1,
+    "longitude": 32.966,
+    "latitude": -96.7452
+},
+{
+    "facility_name": "Methodist Sugarland Hospital",
+    "city": "Sugar Land",
+    "zip": 77479,
+    "TSA": "Q",
+    "certification_expire_date": "10/1/2013",
+    "designation_level": 1,
+    "longitude": 29.5785,
+    "latitude": -95.6066
+},
+{
+    "facility_name": "Methodist Willowbrook Hospital",
+    "city": "Houston",
+    "zip": 77070,
+    "TSA": "Q",
+    "certification_expire_date": "6/1/2012",
+    "designation_level": 1,
+    "longitude": 29.9781,
+    "latitude": -95.5803
+},
+{
+    "facility_name": "Metropolitan Methodist Hospital",
+    "city": "San Antonio",
+    "zip": 78212,
+    "TSA": "P",
+    "certification_expire_date": "7/1/2013",
+    "designation_level": 1,
+    "longitude": 29.4388,
+    "latitude": -98.4935
+},
+{
+    "facility_name": "Mission Trail Baptist Hospital",
+    "city": "San Antonio",
+    "zip": 78235,
+    "TSA": "P",
+    "certification_expire_date": "10/1/2013",
+    "designation_level": 1,
+    "longitude": 29.3494,
+    "latitude": -98.4422
+},
+{
+    "facility_name": "Mother Frances Hospital",
+    "city": "Tyler",
+    "zip": 75701,
+    "TSA": "G",
+    "certification_expire_date": "12/1/2011",
+    "designation_level": 1,
+    "longitude": 32.3254,
+    "latitude": -95.2922
+},
+{
+    "facility_name": "Nacogdoches Memorial Hospital",
+    "city": "Nacogdoches",
+    "zip": 75961,
+    "TSA": "H",
+    "certification_expire_date": "11/1/2011",
+    "designation_level": 1,
+    "longitude": 31.6645,
+    "latitude": -94.5784
+},
+{
+    "facility_name": "North Central Baptist Hospital",
+    "city": "San Antonio",
+    "zip": 78258,
+    "TSA": "P",
+    "certification_expire_date": "3/1/2014",
+    "designation_level": 1,
+    "longitude": 29.6562,
+    "latitude": -98.4967
+},
+{
+    "facility_name": "North Cypress Medical Center",
+    "city": "Cypress",
+    "zip": 77429,
+    "TSA": "Q",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 29.9766,
+    "latitude": -95.6358
+},
+{
+    "facility_name": "North Hills Hospital",
+    "city": "North Richland Hills",
+    "zip": 76180,
+    "TSA": "E",
+    "certification_expire_date": "7/1/2013",
+    "designation_level": 1,
+    "longitude": 32.868,
+    "latitude": -97.2174
+},
+{
+    "facility_name": "Northeast Baptist Hospital",
+    "city": "San Antonio",
+    "zip": 78217,
+    "TSA": "P",
+    "certification_expire_date": "3/1/2014",
+    "designation_level": 1,
+    "longitude": 29.539,
+    "latitude": -98.4194
+},
+{
+    "facility_name": "Northeast Methodist Hospital",
+    "city": "Live Oak",
+    "zip": 78233,
+    "TSA": "P",
+    "certification_expire_date": "10/1/2013",
+    "designation_level": 1,
+    "longitude": 29.5563,
+    "latitude": -98.3643
+},
+{
+    "facility_name": "Oakbend Medical Center",
+    "city": "Richmond",
+    "zip": 77469,
+    "TSA": "Q",
+    "certification_expire_date": "4/1/2012",
+    "designation_level": 1,
+    "longitude": 29.5511,
+    "latitude": -95.7329
+},
+{
+    "facility_name": "Odessa Regional Medical Center",
+    "city": "Odessa",
+    "zip": 79760,
+    "TSA": "J",
+    "certification_expire_date": "10/1/2013",
+    "designation_level": 1,
+    "longitude": 31.7652,
+    "latitude": " -102.3543 "
+},
+{
+    "facility_name": "Parkland Health and Hospital System",
+    "city": "Dallas",
+    "zip": 75235,
+    "TSA": "E",
+    "certification_expire_date": "11/1/2011",
+    "designation_level": 1,
+    "longitude": 32.8252,
+    "latitude": -96.8388
+},
+{
+    "facility_name": "Plaza Medical Center of Fort Worth",
+    "city": "Fort Worth",
+    "zip": 76104,
+    "TSA": "E",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 32.7256,
+    "latitude": -97.3184
+},
+{
+    "facility_name": "Providence Health Center",
+    "city": "Waco",
+    "zip": 76712,
+    "TSA": "M",
+    "certification_expire_date": "11/1/2011",
+    "designation_level": 1,
+    "longitude": 31.5051,
+    "latitude": -97.2311
+},
+{
+    "facility_name": "Providence Memorial Hospital",
+    "city": "El Paso",
+    "zip": 79902,
+    "TSA": "I",
+    "certification_expire_date": "12/1/2011",
+    "designation_level": 1,
+    "longitude": 31.7763,
+    "latitude": -106.4932
+},
+{
+    "facility_name": "San Jacinto Methodist Hospital",
+    "city": "Baytown",
+    "zip": 77521,
+    "TSA": "Q",
+    "certification_expire_date": "12/1/2011",
+    "designation_level": 1,
+    "longitude": 29.7705,
+    "latitude": -94.9695
+},
+{
+    "facility_name": "Scott and White Healthcare - Round Rock",
+    "city": "Round Rock",
+    "zip": 78665,
+    "TSA": "O",
+    "certification_expire_date": "12/1/2011",
+    "designation_level": 1,
+    "longitude": 30.2198,
+    "latitude": -98.3586
+},
+{
+    "facility_name": "Seton Medical Center - Austin",
+    "city": "Austin",
+    "zip": 78705,
+    "TSA": "O",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 30.2896,
+    "latitude": -97.7396
+},
+{
+    "facility_name": "Seton Medical Center Williamson",
+    "city": "Round Rock",
+    "zip": 78665,
+    "TSA": "O",
+    "certification_expire_date": "7/1/2013",
+    "designation_level": 1,
+    "longitude": 30.2198,
+    "latitude": -98.3586
+},
+{
+    "facility_name": "Sierra Medical Center",
+    "city": "El Paso",
+    "zip": 79902,
+    "TSA": "I",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 31.7763,
+    "latitude": " -106.4932 "
+},
+{
+    "facility_name": "Sierra Providence East Medical Center",
+    "city": "El Paso",
+    "zip": 79938,
+    "TSA": "I",
+    "certification_expire_date": "6/1/2013",
+    "designation_level": 1,
+    "longitude": 31.8045,
+    "latitude": " -105.9661 "
+},
+{
+    "facility_name": "St.David 's Medical Center",
+    "city": "Austin",
+    "zip": 78705,
+    "TSA": "O",
+    "certification_expire_date": "11/1/2011",
+    "designation_level": 1,
+    "longitude": 30.2896,
+    "latitude": -97.7396
+},
+{
+    "facility_name": "St. David's North Austin Medical Center",
+    "city": "Austin",
+    "zip": 78758,
+    "TSA": "O",
+    "certification_expire_date": "10/1/2012",
+    "designation_level": 1,
+    "longitude": 30.3764,
+    "latitude": -97.7078
+},
+{
+    "facility_name": "St.Joseph Regional Health Center",
+    "city": "Bryan",
+    "zip": 77802,
+    "TSA": "N",
+    "certification_expire_date": "12/1/2011",
+    "designation_level": 1,
+    "longitude": 30.6582,
+    "latitude": -96.3351
+},
+{
+    "facility_name": "St.Luke 's Baptist Hospital",
+    "city": "San Antonio",
+    "zip": 78229,
+    "TSA": "P",
+    "certification_expire_date": "3/1/2014",
+    "designation_level": 1,
+    "longitude": 29.5042,
+    "latitude": -98.5697
+},
+{
+    "facility_name": "St. Luke's Episcopal Hospital",
+    "city": "Houston",
+    "zip": 77030,
+    "TSA": "Q",
+    "certification_expire_date": "5/1/2012",
+    "designation_level": 1,
+    "longitude": 29.7041,
+    "latitude": -95.401
+},
+{
+    "facility_name": "St.Luke 's The Woodlands Hospital",
+    "city": "Houston",
+    "zip": 77384,
+    "TSA": "Q",
+    "certification_expire_date": "6/1/2013",
+    "designation_level": 1,
+    "longitude": 30.2257,
+    "latitude": -95.4924
+},
+{
+    "facility_name": "Texas Health Arlington Memorial Hospital",
+    "city": "Arlington",
+    "zip": 76012,
+    "TSA": "E",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 32.754,
+    "latitude": -97.1348
+},
+{
+    "facility_name": "Texas Health Harris Methodist Hospital Fort Worth",
+    "city": "Fort Worth",
+    "zip": 76104,
+    "TSA": "E",
+    "certification_expire_date": "11/1/2011",
+    "designation_level": 1,
+    "longitude": 32.7256,
+    "latitude": -97.3184
+},
+{
+    "facility_name": "Texas Health Harris Methodist Hospital Hurst - Euless-Bedford",
+    "city": "Bedford",
+    "zip": 76022,
+    "TSA": "E",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 32.8297,
+    "latitude": -97.1454
+},
+{
+    "facility_name": "Texas Health Presbyterian Hospital of Dallas",
+    "city": "Dallas",
+    "zip": 75231,
+    "TSA": "E",
+    "certification_expire_date": "9/1/2012",
+    "designation_level": 1,
+    "longitude": 32.8756,
+    "latitude": -96.7495
+},
+{
+    "facility_name": "Texas Health Presbyterian Hospital Denton",
+    "city": "Denton",
+    "zip": 76201,
+    "TSA": "E",
+    "certification_expire_date": "12/1/2013",
+    "designation_level": 1,
+    "longitude": 33.2289,
+    "latitude": -97.1314
+},
+{
+    "facility_name": "Texas Health Presbyterian Hospital - WNJ",
+    "city": "Sherman",
+    "zip": 75091,
+    "TSA": "E",
+    "certification_expire_date": "11/1/2011",
+    "designation_level": 1,
+    "longitude": 33.6787,
+    "latitude": -96.6623
+},
+{
+    "facility_name": "Texoma Medical Center",
+    "city": "Denison",
+    "zip": 75020,
+    "TSA": "E",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 33.745,
+    "latitude": -96.5496
+},
+{
+    "facility_name": "United Regional Healthcare System - 11th St Campus",
+    "city": "Wichita Falls",
+    "zip": 76301,
+    "TSA": "C",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 33.9053,
+    "latitude": -98.4976
+},
+{
+    "facility_name": "University Hospital",
+    "city": "San Antonio",
+    "zip": 78229,
+    "TSA": "P",
+    "certification_expire_date": "9/1/2012",
+    "designation_level": 1,
+    "longitude": 29.5042,
+    "latitude": -98.5697
+},
+{
+    "facility_name": "University Medical Center at Brackenridge",
+    "city": "Austin",
+    "zip": 78701,
+    "TSA": "O",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 30.2713,
+    "latitude": -97.7426
+},
+{
+    "facility_name": "UT Southwestern University Hospital",
+    "city": "Dallas",
+    "zip": 75390,
+    "TSA": "E",
+    "certification_expire_date": "10/1/2012",
+    "designation_level": 1,
+    "longitude": 32.7673,
+    "latitude": -96.7776
+},
+{
+    "facility_name": "Valley Baptist Medical Center - Brownsville",
+    "city": "Brownsville",
+    "zip": 78520,
+    "TSA": "V",
+    "certification_expire_date": "11/1/2013",
+    "designation_level": 1,
+    "longitude": 25.9337,
+    "latitude": -97.5174
+},
+{
+    "facility_name": "Valley Baptist Medical Center - Harlingen",
+    "city": "Harlingen",
+    "zip": 78550,
+    "TSA": "V",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 26.1951,
+    "latitude": -97.689
+},
+{
+    "facility_name": "Wadley Regional Medical Center",
+    "city": "Texarkana",
+    "zip": 75501,
+    "TSA": "F",
+    "certification_expire_date": "11/1/2011",
+    "designation_level": 1,
+    "longitude": 33.4113,
+    "latitude": -94.1774
+},
+{
+    "facility_name": "West Houston Medical Center",
+    "city": "Houston",
+    "zip": 77082,
+    "TSA": "Q",
+    "certification_expire_date": "3/1/2012",
+    "designation_level": 1,
+    "longitude": 29.7223,
+    "latitude": -95.6285
+},
+{
+    "facility_name": "Texas Health Presbyterian Hospital of Kaufman",
+    "city": "Kaufman",
+    "zip": 75142,
+    "TSA": "E",
+    "certification_expire_date": "11/1/2013",
+    "designation_level": 3,
+    "longitude": 32.546,
+    "latitude": -96.2852
+}]
