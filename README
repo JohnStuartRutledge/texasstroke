@@ -1,0 +1,6 @@
+TEXAS STROKE SITE
+
+/data    - directory for holding databases, csv files, json, etc
+/static  - holds static media like css, javascript, and images
+/testing - a place to hold experimental code, etc.
+

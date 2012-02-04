@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <script type="text/javascript" src="static/js/libs/d3/d3.min.js"></script>
+    <script type="text/javascript" src="static/js/libs/d3/d3.csv.min.js"></script>
+    <script type="text/javascript" src="static/js/libs/d3/d3.geo.min.js"></script>
+    <script type="text/javascript" src="static/js/libs/d3/d3.geom.js"></script>
+    <script type="text/javascript" src="static/js/libs/d3/d3.layout.min.js"></script>
+    <script type="text/javascript" src="static/js/libs/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="static/js/libs/jquery.tipsy.js"></script>
+    <link type="text/css" rel="stylesheet" href="static/css/stroke.css"/>
+    <link type="text/css" rel="stylesheet" href="static/css/tipsy.css"/>
+    <style type="text/css">
+   
+    text.list {
+    font-size: 20px;
+    }
+    text.active {
+        fill: #dd2f00;
+    }
+    path.overlay {
+        stroke: none;
+        fill: red;
+    }
+    path.overlay:hover {
+        stroke: #dd2f00;
+        stroke-width: 2;
+    }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+
+tsa_names = {
+    "A": "Panhandle",
+    "B": "BRAC",
+    "C": "North Texas",
+    "D": "Big Country",
+    "E": "North Central Texas",
+    "F": "Northeast Texas",
+    "G": "Piney Woods",
+    "H": "Deep East Texas",
+    "I": "Border",
+    "J": "Texas 'J'",
+    "K": "Concho Valley",
+    "L": "Central Texas",
+    "M": "Heart of Texas",
+    "N": "Brazos Valley",
+    "O": "Capital Area Trauma",
+    "P": "Southwest Texas",
+    "Q": "Southeast Texas Trauma",
+    "R": "East Texas Gulf Coast",
+    "S": "Golden Cresent",
+    "T": "Seven Flags",
+    "U": "Coastal Bend",
+    "V": "Lower Rio Grande Valley"
+}
+
+var data,
+    tsa,
+    tsa_zones,
+    zipdata,
+    size     = [710, 500],
+    defScale = 500,
+    defTrans = [480, 250],
+    proj     = d3.geo.equirectangular().scale(1).translate([0,0]),
+    facloc   = d3.geo.equirectangular(),
+    path     = d3.geo.path(),
+    margin   = 25,
+    width    = window.innerWidth - margin,
+    height   = window.innerHeight - margin; 
+
+
+console.log(facloc([30.3264, -97.7713]));
+// [483, 385]
+// [522.12, 385.79347222222225]
+
+console.log(facloc([31.9907, -106.5976]));
+// [358, 355]
+// [524.4315277777778, 398.0522222222222]
+
+
+// create the div that will hold the TSA zone name 
+// to be activated whenever the user rolls said zone.
+var tooltip = d3.select("body")
+    .append("div")
+    .attr("id", "tooltip")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden")
+    .text("unknown");
+
+// create the div that will hold the hospital names
+var tooltip_facilities = d3.select("body")
+    .append("div")
+    .attr("id", "tooltip_facilities")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden")
+    .text("unknown");
+
+/*
+(function() {
+    d3.csv("texas_zipcodes.csv", function(d) { return d;})
+})();
+
+function stulog() {
+    
+}
+stulog(callbackFn);
+*/
+
+// get the classes for the TSA areas
+d3.json("data/tsa.json", function(json) { tsa = json;})
+
+// create your SVG canvas
+var svg = d3.select("body")
+    .append("svg")
+    .call(d3.behavior.zoom()
+        .extent([[0, size[0]], [0, size[1]], [0, 4]])
+        .on("zoom", redraw))
+        .append("g");
+
+
+// create a group for holding states
+var states = svg.append("g")
+    .attr("id", "states");
+
+var tsazones = svg.append("g")
+    .attr("id", "tsazones");
+
+/*
+// create a group object for each TSA zone
+for (var key in tsa_names) {
+    var tsazone = svg.append("g")
+        .attr("id", key)
+        .attr("zone", tsa_names[key]);
+    
+    
+    tsazone.selectAll("path")
+        .data(json.features).enter()
+        .append("g")
+        .attr("id", function(d) {
+            return tsa[d.id];
+        })
+}
+*/
+
+// create a group for holding county elements
+var counties = svg.append("g")
+    .attr("id", "counties");
+
+// load county data
+d3.json("data/tx-counties.json", function(json) {
+    
+    // TODO - for each tsa[d.id] create a new svg group element
+    
+    counties.selectAll("path")
+        .data(json.features).enter()
+        .append("path")
+        .attr("class", function(d) { return tsa[d.id]; })
+        .on("mouseover", function(d){
+            // put TSA zone name in div on rollover
+            $("#tooltip").html(tsa_names[tsa[d.id]]); 
+            return tooltip.style("visibility", "visible");
+        })
+        .on("mouseout", function(){
+            // TODO - move this mouseout function to the group
+            // holding the state of texas boundaries, so that if the mouse
+            // moves off of texas the tooltip gets hidden.
+            //return tooltip.style("visibility", "hidden");
+        })
+        .attr("d", path)
+        .append("county").text(function(d) {
+            var c = d.geometry.coordinates[0][0];
+            if(c[0] > width/2) {
+                if(c[1] > height/2) { $(this).parent().tipsy({gravity:'se'}); } 
+                else { $(this).parent().tipsy({gravity:'ne'}); }
+            } 
+            else {
+                if(c[1] > height/2) { $(this).parent().tipsy({gravity:'sw'}); }
+                else { $(this).parent().tipsy({gravity:'nw'}); }
+            }
+            // insert information into the county tag that will
+            // that includes [county_name]: [stats] 
+            // if stats are not present then 'n/a' for not available
+            return d.p.n + ": " + (d.p.g > 0 ? d.p.g : "n/a");
+        });
+});
+
+
+d3.json("data/us-states.json", function(json) {
+  states.selectAll("path")
+      .data(json.features).enter()
+      .append("path")
+      .attr("d", path);
+});
+
+function redraw() {
+    svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+}
+
+console.log(zipdata);
+// Pull in the hospital longitudes and latitudes and plot
+// them as points on the map. Alter their colors depending on
+// whether or not they are up to date or not
+var hospitals = svg.append("g")
+    .attr("id", "hospitals");
+
+d3.csv("data/facilities.csv", function(csv_data) {
+  hospitals.selectAll("circle")
+      .data(csv_data).enter()
+      .append("svg:circle")
+      .attr("fill", "red")
+      //.attr("stroke", "black")
+      .style("stroke", "white")
+      .style("stroke-width", ".2px")
+      .attr("r", 1)
+      .attr("cx", function(d, i) {
+          // 73344,Austin,TX,Travis,30.3264,-97.7713
+          if(d['zip'] == 78705) {
+              // 30.3264
+              return 483;
+          }
+          if (d['zip'] == '79925-7701'){
+              // 31.9907
+              return 358;
+          }
+          return Math.random()*i + (size[0]/2)+55;
+      })
+      .attr("cy", function(d, i) {
+          if (d['zip'] == 78705) {
+              // -97.7713
+              return 385;
+          }
+          if (d['zip'] == '79925-7701') {
+              // -106.5976
+              return 355;
+          }
+          return Math.random()*i + (size[1]/2)+55;
+      })
+      .on("mouseover", function(d){
+          $("#tooltip_facilities").html(d['facility_name']); 
+          return tooltip_facilities.style("visibility", "visible");
+      })
+      .on("mousemove", function(){
+          var tips = tooltip_facilities
+              .style("top",(event.pageY-10)+"px")
+              .style("left",(event.pageX+10)+"px");
+          return tips;
+      })
+      .on("mouseout", function(){
+          return tooltip_facilities.style("visibility", "hidden");
+      });
+});
+
+/*
+svg.append("svg:text")
+    .classed("title", true)
+    .attr("text-anchor", "start")
+    .attr("x", 1.5*margin)
+    .attr("y", 1.5*margin)
+    .text("Value of US companies compared to GDP of African countries");
+*/
+
+</script>
+
+<!--[if lt IE 9 ]>
+  <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+</body>
+</html>
+

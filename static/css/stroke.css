@@ -1,0 +1,77 @@
+
+body {
+    background-color: #333;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+svg {
+    background: #eee;
+    width: 960px;
+    height: 500px;
+}
+
+#counties path {
+  stroke: #fff;
+  stroke-width: .25px;
+}
+
+#counties path:hover {
+    fill: #FFFF72;
+}
+
+#states path {
+  fill: none;
+  stroke: #555;
+  stroke-width: 1px;
+}
+
+#tooltip {
+    color: #000;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+#tooltip_facilities {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: 600;
+}
+
+/*
+
+#tooltip {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: 600;
+}
+
+#tooltip_facilities {
+    color: #000;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-weight: 600;
+}
+*/
+.A {fill: #4D71A3;}
+.B {fill: #2B4F81;}
+.C {fill: #4981CE;}
+.D {fill: #88ACE0;}
+.E {fill: #5993E5;}
+.F {fill: #6C92CC;}
+.G {fill: #71A1E6;}
+.H {fill: #83B0F2;}
+.I {fill: #819AC7;}
+.J {fill: #7070DC;}
+.K {fill: #7EB6FF;}
+.L {fill: #5B90F6;}
+.M {fill: #1464F4;}
+.N {fill: #7088CC;}
+.O {fill: #7995EA;}
+.P {fill: #B1C5FF;}
+.Q {fill: #9DA9E4;}
+.R {fill: #838EDE;}
+.S {fill: #5C5C9A;}
+.T {fill: #8470FF;}
+.U {fill: #A8ACFF;}
+.V {fill: #4D4DFF;}
