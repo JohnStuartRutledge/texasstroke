@@ -5,6 +5,10 @@ body {
     font-weight: 300;
 }
 
+.stroke_main {
+    min-height: 586px !important;
+}
+
 #stroke_wrapper {
     padding-top: 40px;
     padding-left: 10px;
