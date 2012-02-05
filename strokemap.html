@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title></title>
+  <title>Stroke Map</title>
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -67,31 +67,24 @@
     var data,
         tsa,
         tsa_zones,
-        zipdata,
+        states,
+        counties,
+        hospitals,
+        tooltip,
+        tooltip_facilities,
+        svg,
         size     = [710, 500],
         defScale = 500,
         defTrans = [480, 250],
-        proj     = d3.geo.equirectangular().scale(1).translate([0,0]),
-        facloc   = d3.geo.equirectangular(),
         alber    = d3.geo.albersUsa(),
         path     = d3.geo.path(),
         margin   = 25,
         width    = window.innerWidth - margin,
         height   = window.innerHeight - margin; 
 
-
-    //console.log(facloc([30.3264, -97.7713]));
-    // [483, 385]
-    // [522.12, 385.79347222222225]
-
-    //console.log(facloc([31.9907, -106.5976]));
-    // [358, 355]
-    // [524.4315277777778, 398.0522222222222]
-
-
     // create the div that will hold the TSA zone name 
     // to be activated whenever the user rolls said zone.
-    var tooltip = d3.select("#stroke_map")
+    tooltip = d3.select("#stroke_map")
         .append("div")
         .attr("id", "tooltip")
         .style("position", "absolute")
@@ -100,38 +93,29 @@
         .text("unknown");
 
     // create the div that will hold the hospital names
-    var tooltip_facilities = d3.select("#stroke_map")
+    tooltip_facilities = d3.select("#stroke_map")
         .append("div")
         .attr("id", "tooltip_facilities")
         .style("position", "absolute")
         .style("z-index", "10")
         .style("visibility", "hidden")
         .text("unknown");
-    
-    
+
     // get the classes for the TSA areas
     d3.json("data/tsa.json", function(json) { tsa = json;})
 
     // create your SVG canvas
-    var svg = d3.select("#stroke_map")
+    svg = d3.select("#stroke_map")
         .append("svg")
         .call(d3.behavior.zoom()
             .extent([[0, size[0]], [0, size[1]], [0, 4]])
             .on("zoom", redraw))
             .append("g");
     
-    
-    // create a group for holding states
-    var states = svg.append("g")
-        .attr("id", "states");
-
-    var tsazones = svg.append("g")
-        .attr("id", "tsazones");
-    
-
-    // create a group for holding county elements
-    var counties = svg.append("g")
-        .attr("id", "counties");
+    // create a group for holding states, tsa-zones, and counties
+    states   = svg.append("g").attr("id", "states");
+    tsazones = svg.append("g").attr("id", "tsazones");
+    counties = svg.append("g").attr("id", "counties");
 
     // load county data
     d3.json("data/tx-counties.json", function(json) {
@@ -155,17 +139,18 @@
             })
             .attr("d", path)
             .append("county").text(function(d) {
+
                 var c = d.geometry.coordinates[0][0];
                 
                 if(c[0] > width/2) {
                     if(c[1] > height/2) { $(this).parent().tipsy({gravity:'se'}); } 
-                    else { $(this).parent().tipsy({gravity:'ne'}); }
+                    else                { $(this).parent().tipsy({gravity:'ne'}); }
                 } 
                 else {
                     if(c[1] > height/2) { $(this).parent().tipsy({gravity:'sw'}); }
-                    else { $(this).parent().tipsy({gravity:'nw'}); }
+                    else                { $(this).parent().tipsy({gravity:'nw'}); }
                 }
-                // insert information into the county tag that will
+                // insert information into the county tag 
                 // that includes [county_name]: [stats] 
                 // if stats are not present then 'n/a' for not available
                 return d.p.n + ": " + (d.p.g > 0 ? d.p.g : "n/a");
@@ -173,6 +158,7 @@
     });
 
 
+    // load the geo-json for creating the states
     d3.json("data/us-states.json", function(json) {
       states.selectAll("path")
           .data(json.features).enter()
@@ -180,15 +166,9 @@
           .attr("d", path);
     });
 
-    function redraw() {
-        svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-    }
-
-    //console.log(zipdata);
-    // Pull in the hospital longitudes and latitudes and plot
-    // them as points on the map. Alter their colors depending on
+    // TODO - Alter hospital colors depending on
     // whether or not they are up to date or not
-    var hospitals = svg.append("g")
+    hospitals = svg.append("g")
         .attr("id", "hospitals");
     
     d3.json("data/facilities.json", function(json) {
@@ -221,6 +201,10 @@
                   return tooltip_facilities.style("visibility", "hidden");
               });
     });
+
+    function redraw() {
+        svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+    }
 
     </script>
 </div>
