@@ -44,8 +44,11 @@ var tsa_names = {
     "V": "Lower Rio Grande Valley"
 }
 
+//----------------------------------------------------------------------------
+//
+//----------------------------------------------------------------------------
+
 // create the div that will hold the TSA zone name
-// to be activated whenever the user rolls said zone.
 tooltip = d3.select("#stroke_map")
     .append("div")
     .attr("id", "tooltip")
@@ -66,7 +69,7 @@ tooltip_facilities = d3.select("#stroke_map")
 // get the classes for the TSA areas
 d3.json("data/tsa.json", function(json) { tsa = json;})
 
-// create your SVG canvas
+// build your SVG canvas
 svg = d3.select("#stroke_map")
     .append("svg")
     .call(d3.behavior.zoom()
@@ -74,7 +77,7 @@ svg = d3.select("#stroke_map")
         .on("zoom", redraw))
         .append("g");
 
-// create a group for holding states, tsa-zones, and counties
+// create group for holding states, tsa-zones, and counties
 states   = svg.append("g").attr("id", "states");
 tsazones = svg.append("g").attr("id", "tsazones");
 counties = svg.append("g").attr("id", "counties");
@@ -115,8 +118,8 @@ d3.json("data/tx-counties.json", function(json) {
                 }
             }
             // insert information into the county tag
-            // that includes [county_name]: [stats]
-            // if stats are not present then use 'n/a' for 'not available'
+            // if it includes [county_name]: [stats]
+            // otherwise it defaults to 'n/a' for 'not available'
             return d.p.n + ": " + (d.p.g > 0 ? d.p.g : "n/a");
         });
 });
@@ -132,6 +135,7 @@ d3.json("data/us-states.json", function(json) {
 hospitals = svg.append("g")
     .attr("id", "hospitals");
 
+// plot the hospitals on the map in their correct county
 d3.json("data/facilities.json", function(json) {
     hospitals.selectAll("circle")
         .data(json).enter()
@@ -179,6 +183,7 @@ function redraw() {
 //                                DAT.GUI
 //----------------------------------------------------------------------------
 
+// create menu for controlling the display of data
 var GuiText = function() {
     this.message        = 'Stroke Mortality';
     this.year           = '200 - 2006';
