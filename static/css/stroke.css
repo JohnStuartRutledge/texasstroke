@@ -1,29 +1,74 @@
-
+/*
+fill: #496FAB;
+*/
 body {
     background-color: #333;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
 }
 
+.stroke_main {
+    min-height: 586px !important;
+}
+
+#stroke_wrapper {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#stroke_map {
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    /*border: 1px solid #496fab;*/
+}
+
+#stroke_map_controls {
+    position: absolute;
+    z-index: 999;
+    width: 300px;
+    margin-left: 700px;
+}
+
+text.list {
+    font-size: 20px;
+}
+
+text.active {
+    fill: #dd2f00;
+}
+
+path.overlay {
+    stroke: none;
+    fill: red;
+}
+
+path.overlay:hover {
+    stroke: #dd2f00;
+    stroke-width: 2;
+}
+
 svg {
     background: #eee;
-    width: 960px;
+    width: 900px;
     height: 500px;
 }
 
 #counties path {
-  stroke: #fff;
-  stroke-width: .25px;
+    stroke: #fff;
+    stroke-width: .25px;
 }
 
 #counties path:hover {
     fill: #FFFF72;
+    opacity: .5;
 }
 
 #states path {
-  fill: none;
-  stroke: #555;
-  stroke-width: 1px;
+    fill: none;
+    stroke: #555;
+    stroke-width: 1px;
 }
 
 #tooltip {
@@ -40,19 +85,42 @@ svg {
 }
 
 /*
-
-#tooltip {
-    color: #FFFFFF;
-    text-shadow: 1px 1px 1px #000;
-    font-weight: 600;
-}
-
-#tooltip_facilities {
-    color: #000;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    font-weight: 600;
-}
+list of colorbrewer colors to use
+fill: #FFFFD9
+fill: #EDF8B1
+fill: #C7E9B4
+fill: #7FCDBB
+fill: #41B6C4
+fill: #1D91C0
+fill: #225EA8
+fill: #253494
+fill: #081D58
 */
+
+.A {fill: #8DD3C7; opacity: .20;}
+.B {fill: #FFFFB3; opacity: .20;}
+.C {fill: #BEBADA; opacity: .20;}
+.D {fill: #FB8072; opacity: .20;}
+.E {fill: #80B1D3; opacity: .20;}
+.F {fill: #FDB462; opacity: .20;}
+.G {fill: #B3DE69; opacity: .20;}
+.H {fill: #FCCDE5; opacity: .20;}
+.I {fill: #D9D9D9; opacity: .20;}
+.J {fill: #BC80BD; opacity: .20;}
+.K {fill: #CCEBC5; opacity: .10;}
+.L {fill: #FFED6F; opacity: .10;} 
+.M {fill: #8DD3C7; opacity: .10;}
+.N {fill: #FFFFB3; opacity: .10;}
+.O {fill: #BEBADA; opacity: .10;}
+.P {fill: #FB8072; opacity: .10;}
+.Q {fill: #80B1D3; opacity: .10;}
+.R {fill: #FDB462; opacity: .10;}
+.S {fill: #B3DE69; opacity: .10;}
+.T {fill: #FCCDE5; opacity: .10;}
+.U {fill: #D9D9D9; opacity: .10;}
+.V {fill: #BC80BD; opacity: .10;}
+
+/*
 .A {fill: #4D71A3;}
 .B {fill: #2B4F81;}
 .C {fill: #4981CE;}
@@ -75,3 +143,5 @@ svg {
 .T {fill: #8470FF;}
 .U {fill: #A8ACFF;}
 .V {fill: #4D4DFF;}
+*/
+
